@@ -7,7 +7,7 @@ namespace AdventureGame.Commands
 {
     class Help : ICommand
     {
-        public void Execute()
+        public void Execute(string command)
         {
             Console.WriteLine("Command List\n============\ndance\nget\njump\nlaugh\nwave\nexit\n");
         }

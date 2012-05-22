@@ -19,7 +19,7 @@ namespace AdventureGame
                 Console.WriteLine();
 
                 ICommand command = CommandFactory.GetCommand(input);
-                command.Execute();
+                command.Execute(input);
             }
             while (input.ToLower() != "exit");
         }

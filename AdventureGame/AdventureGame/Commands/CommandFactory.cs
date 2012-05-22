@@ -10,42 +10,25 @@ namespace AdventureGame.Commands
         public static ICommand GetCommand(string commandName)
         {
             ICommand command = null;
-            //CommandDictionary commandPass = new CommandDictionary(commandName);
-
-
-
             switch (commandName.ToLower())
             {
                 case "dance":
-                    command = new CommandDictionary(commandName);
-                    break;
                 case "wave":
-                    command = new CommandDictionary(commandName);
-                    break;
                 case "jump":
-                    command = new CommandDictionary(commandName);
-                    break;
                 case "laugh":
-                    command = new CommandDictionary(commandName);
+                    command = new EmoteCommands();
                     break;
-                //case "get":
-                //    command = new GetCmd();
-                //    break;
-                //case "help":
-                //    command = new Help();
-                //    break;
-                case "":
-                    command = new CommandDictionary(commandName);
+                case "get":
+                    command = new GetCmd();
                     break;
-                case "exit":
-                    command = new Exit();
+                case "help":
+                    command = new Help();
                     break;
                 default:
                     Console.WriteLine("I don't know what '" + commandName + "' means.");
                     command = new CommandError();
                     break;
             }
-
             return command;
         }
     }

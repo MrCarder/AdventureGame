@@ -7,7 +7,7 @@ namespace AdventureGame.Commands
 {
     class GetCmd : ICommand
     {
-        public void Execute()
+        public void Execute(string command)
         {
                 Console.WriteLine("Get what?");
         }

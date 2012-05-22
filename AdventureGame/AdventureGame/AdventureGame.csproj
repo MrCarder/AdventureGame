@@ -43,18 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\CommandDictionary.cs" />
+    <Compile Include="Commands\EmoteDictionary.cs" />
     <Compile Include="Commands\CommandError.cs" />
     <Compile Include="Commands\CommandFactory.cs" />
-    <Compile Include="Commands\Dance.cs" />
     <Compile Include="Commands\EmptyCmd.cs" />
-    <Compile Include="Commands\Exit.cs" />
     <Compile Include="Commands\GetCmd.cs" />
     <Compile Include="Commands\Help.cs" />
-    <Compile Include="Commands\Jump.cs" />
-    <Compile Include="Commands\Laugh.cs" />
     <Compile Include="ICommand.cs" />
-    <Compile Include="Commands\Wave.cs" />
     <Compile Include="GameRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
