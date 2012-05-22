@@ -9,6 +9,8 @@ namespace AdventureGame
     {
         static void Main(string[] args)
         {
+            GameRunner gameRunner = new GameRunner();
+            gameRunner.Run();
         }
     }
 }
